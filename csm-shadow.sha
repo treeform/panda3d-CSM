@@ -106,6 +106,6 @@ void fshader(in float2 l_texcoord0 : TEXCOORD0,
 	  } 
   }
   
-  o_color = baseColor * ( shade + k_ambient.x );
+  o_color = baseColor * ( l_smooth * shade + k_ambient.x );
   
 }
